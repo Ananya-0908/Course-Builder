@@ -1,0 +1,105 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .navbar-logo a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  .navbar-add {
+    position: relative;
+  }
+  
+  .add-button {
+    background-color: #bd0000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .add-button .fa-plus {
+    margin-right: 5px;
+  }
+
+  .add-button svg {
+    margin-right: 0.5rem;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #ffffff;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border: 1px solid #ececec;
+    border-radius: 4px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-menu li {
+    padding: 10px 20px;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu li button,
+.dropdown-menu li a {
+  background: none;
+  border: none;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-menu li button .fa,
+.dropdown-menu li a .fa {
+  margin-right: 50px;
+}
+
+.dropdown-menu li:hover {
+  background: #f0f0f0;
+}
+
+  .dropdown-menu li a svg {
+    margin-right: 0.5rem;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #ebebeb;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  }

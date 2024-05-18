@@ -1,0 +1,32 @@
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.image-container {
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  max-width: 50%; /* Adjust this value as needed */
+  height: auto;
+}
+
+.content p {
+  margin: 0;
+}
+
+.content p:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content p:last-child {
+  font-size: 1rem;
+}
